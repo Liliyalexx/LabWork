@@ -34,3 +34,31 @@ console.log(`Are all numbers are unique?`, isUnique);
 //Did the numbers pass the validation checks?
 const isValid = isSum50 && areTwoOdd && !areLargerThan25 && isUnique;
 console.log(`do the numbers pass all checks`,isValid );
+
+//Check if all numbers are divisible by 5. Cache the result in a variable.
+const divisibleBy5 = (num1 % 5) + (num2 % 5) + (num3 % 5) + (num4 % 5)==0;
+
+console.log(`Are numbers divisible by 5`, divisibleBy5);
+
+//Check if the first number is larger than the last. Cache the result in a variable.
+const firstLargerlast = num1 > num4;
+
+console.log( "first number is larger than the last", firstLargerlast);
+
+
+// Accomplish the following arithmetic chain:
+// Subtract the first number from the second number.
+// Multiply the result by the third number.
+// Find the remainder of dividing the result by the fourth number.
+
+console.log(num1, num2, num3, num4);
+console.log(((num2-num1)*num3)%num4);
+
+//Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
+let isUnder25  = num1<25 || num2 < 25 || num3 < 25|| num4 < 25;
+
+// Part 2: Practical Math
+
+
+
+
